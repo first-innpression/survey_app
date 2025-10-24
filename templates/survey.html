@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Опрос</title>
+    <link rel= 'stylesheet' href="/static/style.css" />
+
+</head>
+<body>
+<div class="container">
+        <h2>Добро пожаловать, {{ email }}!</h2>
+        <p>Пожалуйста, ответьте на вопросы:</p>
+        <form method="post">
+            <label>Ваше любимое время суток:</label><br />
+            <input  type="radio" name="favorite_time" value="Утро" required /> Утро<br />
+            <input type="radio" name="favorite_time" value="День" /> День<br />
+            <input type="radio" name="favorite_time" value="Вечер" /> Вечер<br />
+            <input type="radio" name="favorite_time" value="Ночь" /> Ночь<br /><br />
+            <label>Ваш любимый сезон:</label><br />
+            <input type="radio" name="favorite_season" value="Зима" required /> Зима<br />
+            <input type="radio" name="favorite_season" value="Весна" /> Весна<br />
+            <input type="radio" name="favorite_season" value="Лето" /> Лето<br />
+            <input type="radio" name="favorite_season" value="Осень" /> Осень<br /><br />
+            <label>Ваш любимый актер:</label><br />
+            <input type="text" name="favorite_actor" placeholder="Введите имя актера" required /> <br /><br />
+            <label>Ваш любимый жанр в кино:</label><br />
+            <input type="checkbox" name="favorite_genres" value="Комедия" /> Комедия<br />
+            <input type="checkbox" name="favorite_genres" value="Драма" /> Драма<br />
+            <input type="checkbox" name="favorite_genres" value="Фэнтези" /> Фэнтези<br />
+            <input type="checkbox" name="favorite_genres" value="Боевик" /> Боевик<br /><br />
+            <button type="submit">Отправить</button>
+
+        </form>
+</div>
+</body>
+</html>

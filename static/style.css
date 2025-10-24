@@ -1,0 +1,49 @@
+body {
+        color: coral;
+        background-color: #f0f0f0;
+        font-size: 18px;
+        font-weight: bold;
+}
+
+h2 { /*СТИЛЬ ПОДЗАГОЛОВКОВ*/
+    text-align: center;
+    color: #7d7aff;
+}
+
+p {
+    font-size: 20px;
+    color: #ff5900;
+    text-align: center;
+
+}
+
+input[type="email"] { /*СТИЛЬ ДЛЯ СТРОКИ ВВОДА EMAIL*/
+    padding: 8px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {  /*СТИЛЬ ДЛЯ ВСЕХ КНОПОК*/
+    padding: 10px;
+    background-color: #ff8400;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover { /*СТИЛЬ ДЛЯ КНОПКИ, КОГДА НА НЕЕ НАПРАВЛЕН УКАЗАТЕЛЬ МЫШИ*/
+    background-color: #d4832b;
+}
+.container { /*ОТДЕЛЬНЫЙ КЛАСС, КОТОРЫЙ БУДЕМ ИСПОЛЬЗОВАТЬ ДЛЯ ВСЕГО НАПОЛНЕНИЯ ОПРОСА*/
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+
+
