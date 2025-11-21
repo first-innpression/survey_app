@@ -16,6 +16,13 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/results')
+def results():
+    # Открываем файл и возвращаем содержимое
+    with open('results.csv', 'r', encoding='utf-8') as f:
+        data = f.read()
+    # Можно вернуть как обычный текст или оформить в HTML
+    return f"<pre>{data}</pre>"
 
 @app.route('/survey', methods=['GET', 'POST'])
 def survey():
